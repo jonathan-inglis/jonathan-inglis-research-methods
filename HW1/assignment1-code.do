@@ -1,6 +1,14 @@
 * Read in data: 
 insheet using assignment1-research-methods.csv, comma names clear
 
+*Relabelling all variables
+label variable calledback "Called back"
+label variable recruiteriswhite "White recruiter"
+label variable recruiterismale "Male recruiter"
+label variable malecandidate "Male candidate"
+label variable eliteschoolcandidate "Elite school candidate"
+label variable bigcompanycandidate "Big company candidate"
+
 * Run regression: 
 reg calledback eliteschoolcandidate bigcompanycandidate malecandidate
 
